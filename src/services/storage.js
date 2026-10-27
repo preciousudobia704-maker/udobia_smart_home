@@ -16,7 +16,7 @@ const DEFAULT_PREFERENCES = {
   sound_enabled: true,
   undo_timeout_ms: 5000,
   trusted_contact: {
-    name: 'Sarah (Daughter)',
+    name: 'Eti-Ima (Daughter)',
     phone: '+234 816 498 1474'
   }
 };
