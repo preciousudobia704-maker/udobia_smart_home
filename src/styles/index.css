@@ -1,0 +1,103 @@
+@import './tokens.css';
+
+/* Accessible Base Styling */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100%;
+  background-color: var(--color-bg-app);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-base, 'Atkinson Hyperlegible Next Variable', system-ui, sans-serif);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html[data-text-scale="large"] {
+  font-size: 18px;
+}
+
+html[data-text-scale="xlarge"] {
+  font-size: 20px;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Accessible interactive elements */
+button, a, input, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  user-select: none;
+  transition: background-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* High Contrast Focus Outline for WCAG Accessibility */
+button:focus-visible, a:focus-visible, input:focus-visible {
+  outline: 4px solid var(--color-teal);
+  outline-offset: 3px;
+}
+
+/* Typography Headings & Text */
+h1, h2, h3, h4, p, span {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  letter-spacing: normal;
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+p {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+}
+
+/* Reduced Motion preference support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" rx="100" fill="#1a1a2e"/>
+  <circle cx="256" cy="256" r="180" fill="#0d9488" opacity="0.2"/>
+  <!-- Home Roof & Walls -->
+  <path d="M256 100 L410 230 L360 230 L360 390 L152 390 L152 230 L102 230 Z" fill="#4fd1c5"/>
+  <!-- Door / Center Shield -->
+  <rect x="220" y="270" width="72" height="120" rx="10" fill="#1a1a2e"/>
+  <!-- Glowing Window / Heart -->
+  <circle cx="256" cy="190" r="26" fill="#ffffff"/>
+</svg>

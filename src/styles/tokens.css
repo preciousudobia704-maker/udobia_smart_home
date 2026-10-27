@@ -1,0 +1,148 @@
+:root {
+  /* 1. Core Palette Tokens */
+  --color-ink: #172640;
+  --color-mist: #EAF1EF;
+  --color-paper: #FFFFFF;
+  --color-teal: #0F766E;
+  --color-teal-tint: #D5EEE9;
+  --color-lamp: #F5B83D;
+  --color-lamp-tint: #FFF1CF;
+  --color-emergency: #ff8570;
+
+  /* Semantic Mappings */
+  --color-navy: #172640;
+  --color-navy-light: #243552;
+  --color-navy-dark: #101a2c;
+  --color-text-primary: #172640;
+  --color-text-secondary: #1e293b;
+  --color-text-muted: #1e293b;
+  --color-text-on-dark: #ffffff;
+  
+  --color-bg-app: #EAF1EF;
+  --color-bg-card: #FFFFFF;
+  --color-bg-card-active: #FFF1CF;
+  --color-border: rgba(23, 38, 64, 0.14);
+  --color-border-active: #0F766E;
+  --color-border-focus: #0F766E;
+
+  /* Accent Colors */
+  --color-teal-light: #4fd1c5;
+  --color-teal-dark: #0f766e;
+  --color-teal-bg: #D5EEE9;
+
+  /* Functional / Status Colors */
+  --color-state-on-bg: #FFF1CF;
+  --color-state-on-text: #172640;
+  --color-state-on-border: #F5B83D;
+
+  --color-state-off-bg: #EAF1EF;
+  --color-state-off-text: #172640;
+  --color-state-off-border: rgba(23, 38, 64, 0.2);
+
+  --color-action-on-bg: #0F766E;
+  --color-action-on-hover: #0d665f;
+  --color-action-on-text: #ffffff;
+
+  --color-action-off-bg: #172640;
+  --color-action-off-hover: #1f3254;
+  --color-action-off-text: #ffffff;
+
+  --color-warning-bg: #fffbeb;
+  --color-warning-border: #d97706;
+  --color-warning-text: #78350f;
+
+  --color-suggestion-bg: #172640;
+  --color-suggestion-border: transparent;
+  --color-suggestion-text: #ffffff;
+
+  --color-undo-bg: #172640;
+  --color-undo-text: #ffffff;
+  --color-undo-btn-bg: #D5EEE9;
+  --color-undo-btn-text: #172640;
+
+  /* Typography Families - Unified Single Typeface: Atkinson Hyperlegible Next */
+  --font-family-base: 'Atkinson Hyperlegible Next Variable', system-ui, sans-serif;
+  --font-serif: 'Atkinson Hyperlegible Next Variable', system-ui, sans-serif;
+  --font-sans: 'Atkinson Hyperlegible Next Variable', system-ui, sans-serif;
+
+  /* Radii by Role */
+  --radius-arch: 9999px 9999px 0 0;
+  --radius-card: 28px;
+  --radius-plate: 20px;
+  --radius-button: 9999px;
+  --radius-badge: 9999px;
+
+  /* Sizing and Spacing */
+  --touch-target-min: 60px;
+  --spacing-card-padding: 32px 28px;
+  --spacing-grid-gap: 28px;
+  --spacing-section-margin: 48px;
+
+  /* Typography Sizes (Default: Normal, 18px base) */
+  --font-size-sm: 1rem;        /* 16px */
+  --font-size-base: 1.125rem;  /* 18px */
+  --font-size-md: 1.25rem;     /* 20px */
+  --font-size-lg: 1.5rem;      /* 24px */
+  --font-size-xl: 1.75rem;     /* 28px */
+  --font-size-2xl: 2.125rem;   /* 34px */
+
+  --font-weight-normal: 500; /* Body and description text: 500 (never 400 or lighter) */
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;   /* Small labels: 600 */
+  --font-weight-heavy: 700;  /* Section headings, row titles, and buttons: 700 */
+  --font-weight-black: 800;  /* Hero greeting and page titles: 800 */
+
+  /* Ink-Tinted Shadows (Resting, Active, Pressed) */
+  --shadow-resting: 0 4px 16px rgba(23, 38, 64, 0.08);
+  --shadow-active: 0 10px 28px rgba(23, 38, 64, 0.12);
+  --shadow-pressed: 0 2px 6px rgba(23, 38, 64, 0.16);
+  --shadow-card: 0 4px 16px rgba(23, 38, 64, 0.08);
+  --shadow-card-active: 0 10px 28px rgba(23, 38, 64, 0.12);
+  --shadow-button: 0 3px 8px rgba(23, 38, 64, 0.12);
+  --shadow-button-active: 0 1px 3px rgba(23, 38, 64, 0.2);
+  --shadow-toast: 0 12px 30px rgba(23, 38, 64, 0.25);
+  --shadow-modal: 0 24px 48px rgba(23, 38, 64, 0.3);
+}
+
+/* Scaled Typography: Large (A+, ~21px base) */
+[data-text-scale="large"] {
+  --font-size-sm: 1.125rem;    /* 18px */
+  --font-size-base: 1.3125rem; /* 21px */
+  --font-size-md: 1.45rem;     /* 23.2px */
+  --font-size-lg: 1.7rem;      /* 27.2px */
+  --font-size-xl: 1.95rem;     /* 31.2px */
+  --font-size-2xl: 2.35rem;    /* 37.6px */
+  --touch-target-min: 66px;
+  --spacing-card-padding: 28px;
+  --spacing-grid-gap: 28px;
+}
+
+/* Scaled Typography: Extra Large (A++, ~24px base) */
+[data-text-scale="xlarge"] {
+  --font-size-sm: 1.25rem;     /* 20px */
+  --font-size-base: 1.5rem;    /* 24px */
+  --font-size-md: 1.65rem;     /* 26.4px */
+  --font-size-lg: 1.95rem;     /* 31.2px */
+  --font-size-xl: 2.25rem;     /* 36px */
+  --font-size-2xl: 2.65rem;    /* 42.4px */
+  --touch-target-min: 72px;
+  --spacing-card-padding: 32px;
+  --spacing-grid-gap: 32px;
+}
+
+/* Ultra High Contrast Mode (WCAG AAA Enhanced) */
+[data-high-contrast="true"] {
+  --color-navy: #000000;
+  --color-text-primary: #000000;
+  --color-text-secondary: #000000;
+  --color-text-muted: #111111;
+  --color-bg-app: #ffffff;
+  --color-bg-card: #ffffff;
+  --color-bg-card-active: #dcfce7;
+  --color-border: #000000;
+  --color-border-active: #000000;
+  --color-teal: #047857;
+  --color-teal-bg: #d1fae5;
+  --shadow-card: 0 0 0 3px #000000;
+  --shadow-card-active: 0 0 0 4px #000000;
+}
